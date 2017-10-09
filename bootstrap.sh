@@ -7,4 +7,6 @@ yum -y install rundeck
 service rundeckd start
 cd /vagrant && tar -xvf /vagrant/caddy*.tar
 cp /vagrant/caddy /usr/local/bin/
-nohup /vagrant/caddy -conf /vagrant/Caddyfile & > /vagrant/nohup.out
+cp /vagrant/caddy /sbin
+cd /vagrant
+nohup caddy & > /vagrant/nohup.out
