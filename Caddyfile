@@ -1,0 +1,5 @@
+192.168.33.10:80 { 
+	proxy / localhost:4440 {
+		transparent
+	}
+}
